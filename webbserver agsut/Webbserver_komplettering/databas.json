@@ -1,0 +1,17 @@
+[
+    {
+        "name": "asd",
+        "description": "asd",
+        "price": "a"
+    },
+    {
+        "name": "1",
+        "description": "23",
+        "price": "33"
+    },
+    {
+        "name": "a",
+        "description": "b",
+        "price": "c"
+    }
+]

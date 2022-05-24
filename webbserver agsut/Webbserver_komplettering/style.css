@@ -1,0 +1,95 @@
+body{
+    height:100vh;
+    width:100vw;
+    background-color: aliceblue;
+}
+
+.wrapper{
+    height: 95%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 80px auto 50px;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer";
+}
+
+header{
+    grid-area: header;
+}
+
+header > h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+nav{
+    grid-area: nav;
+    padding-top: 15px;
+}
+
+nav ul{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    margin:0;
+    padding: 0;
+    
+}
+
+nav li{
+    text-align: center;
+    list-style-type: none;
+    padding-bottom: 10px;
+    
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+}
+
+a:link, a:visited, a:focus, a:hover, a:active{
+    color: black;
+}
+
+main{
+    grid-area: main;
+    padding-top: 15px;
+}
+
+table, form{
+    width: 60%;
+    margin: auto;
+}
+
+table, tr, td, th{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+   
+}
+
+input[type="text"], input[type="password"]{
+    margin-left:50px;
+}
+
+footer{
+    grid-area: footer;
+}
+
+footer p{
+    text-align: center;
+    font-size: x-small;
+}
+
+
